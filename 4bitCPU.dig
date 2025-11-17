@@ -93,16 +93,6 @@
       <pos x="980" y="320"/>
     </visualElement>
     <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-      </elementAttributes>
-      <pos x="1040" y="280"/>
-    </visualElement>
-    <visualElement>
       <elementName>Probe</elementName>
       <elementAttributes>
         <entry>
@@ -138,20 +128,6 @@
       <pos x="980" y="660"/>
     </visualElement>
     <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
-        </entry>
-        <entry>
-          <string>Value</string>
-          <long>0</long>
-        </entry>
-      </elementAttributes>
-      <pos x="1040" y="620"/>
-    </visualElement>
-    <visualElement>
       <elementName>Probe</elementName>
       <elementAttributes>
         <entry>
@@ -170,11 +146,6 @@
       <elementName>4bit2:1mux.dig</elementName>
       <elementAttributes/>
       <pos x="660" y="540"/>
-    </visualElement>
-    <visualElement>
-      <elementName>4bitALU.dig</elementName>
-      <elementAttributes/>
-      <pos x="1960" y="1080"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -210,16 +181,16 @@
       <elementName>Splitter</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
           <string>Input Splitting</string>
           <string>4</string>
         </entry>
         <entry>
           <string>Output Splitting</string>
           <string>1</string>
-        </entry>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="3"/>
         </entry>
       </elementAttributes>
       <pos x="1140" y="660"/>
@@ -301,6 +272,26 @@
         </entry>
       </elementAttributes>
       <pos x="320" y="-120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Not</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+      </elementAttributes>
+      <pos x="1040" y="720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>4bitALU.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1960" y="1080"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -513,6 +504,10 @@
       <p2 x="1220" y="1000"/>
     </wire>
     <wire>
+      <p1 x="460" y="360"/>
+      <p2 x="1040" y="360"/>
+    </wire>
+    <wire>
       <p1 x="580" y="300"/>
       <p2 x="920" y="300"/>
     </wire>
@@ -591,6 +586,10 @@
     <wire>
       <p1 x="1600" y="1400"/>
       <p2 x="2340" y="1400"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="760"/>
+      <p2 x="1040" y="760"/>
     </wire>
     <wire>
       <p1 x="-40" y="60"/>
@@ -673,12 +672,20 @@
       <p2 x="460" y="240"/>
     </wire>
     <wire>
-      <p1 x="460" y="240"/>
+      <p1 x="460" y="360"/>
       <p2 x="460" y="580"/>
     </wire>
     <wire>
-      <p1 x="460" y="580"/>
+      <p1 x="460" y="240"/>
+      <p2 x="460" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="760"/>
       <p2 x="460" y="1220"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="580"/>
+      <p2 x="460" y="760"/>
     </wire>
     <wire>
       <p1 x="2060" y="1080"/>
@@ -691,6 +698,18 @@
     <wire>
       <p1 x="1840" y="-80"/>
       <p2 x="1840" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="1040" y="280"/>
+      <p2 x="1040" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="1040" y="720"/>
+      <p2 x="1040" y="760"/>
+    </wire>
+    <wire>
+      <p1 x="1040" y="620"/>
+      <p2 x="1040" y="680"/>
     </wire>
     <wire>
       <p1 x="-180" y="-80"/>
@@ -723,10 +742,6 @@
     <wire>
       <p1 x="180" y="-140"/>
       <p2 x="180" y="0"/>
-    </wire>
-    <wire>
-      <p1 x="180" y="1340"/>
-      <p2 x="180" y="1440"/>
     </wire>
     <wire>
       <p1 x="180" y="160"/>
